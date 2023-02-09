@@ -36,7 +36,7 @@
     5. Improve text rendering
   */
   body {
-    line-height: 1.5;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
   }
   /*
@@ -58,4 +58,49 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
- 
+h1 {
+    line-height: 1;
+}
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-400);
+    font-size: 0.875rem;
+    background-color: var(--clr-secondary-200);
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
+
+.flex-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product {
+    --content-padding: 1.5rem;
+    --content-spacing: 1rem;
+    background-color: var(--clr-neutral-100);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+}
+
+.product__content {
+    padding: var(--content-padding);
+    display: grid;
+    gap: var(--content-spacing);
+}
+
+.product__category {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.product__title {
+    font-size: 2rem;
+    font-family: var(--ff-accent);
+    color: var(--clr-neutral-900);
+}
